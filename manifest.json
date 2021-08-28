@@ -1,0 +1,50 @@
+{
+  "schema": "1.0",
+  "details": {
+    "displayName": "Registro OS",
+    "description": "Desenvolvido por João Ricardo\nVersão: 1.0",
+    "createdTime": "2021-08-28T04:23:08.0623284Z",
+    "packageTelemetryId": "f23ad04d-a2ea-4e7b-b3fe-9a257f51cde9",
+    "creator": "JOÃO RICARDO SILVA SANTOS",
+    "sourceEnvironment": "EDITORA E DISTRIBUIDORA EDUCACIONAL S/A (default)"
+  },
+  "resources": {
+    "e12327bb-d1f1-4c66-b520-c30570c2c6bf": {
+      "type": "Microsoft.PowerApps/apps",
+      "suggestedCreationType": "Update",
+      "creationType": "New, Update",
+      "details": { "displayName": "Aplicativo" },
+      "configurableBy": "User",
+      "dependsOn": [
+        "e49d93bf-2ad1-46e2-9907-c0692e214746",
+        "4f27dfce-1201-45b8-b4ef-623b2fc97e01"
+      ]
+    },
+    "e49d93bf-2ad1-46e2-9907-c0692e214746": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_excel",
+      "name": "shared_excel",
+      "type": "Microsoft.PowerApps/apis",
+      "suggestedCreationType": "Existing",
+      "details": {
+        "displayName": "Excel",
+        "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1493/1.0.1493.2486/excel/icon.png"
+      },
+      "configurableBy": "System",
+      "hierarchy": "Child",
+      "dependsOn": []
+    },
+    "4f27dfce-1201-45b8-b4ef-623b2fc97e01": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness",
+      "name": "shared_onedriveforbusiness",
+      "type": "Microsoft.PowerApps/apis",
+      "suggestedCreationType": "Existing",
+      "details": {
+        "displayName": "OneDrive for Business",
+        "iconUri": "https://connectoricons-prod.azureedge.net/depfeife/special-train/1.0.1489.2478/onedriveforbusiness/icon.png"
+      },
+      "configurableBy": "System",
+      "hierarchy": "Child",
+      "dependsOn": []
+    }
+  }
+}

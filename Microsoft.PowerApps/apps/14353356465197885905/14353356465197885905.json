@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0",
+  "appDefinitionTemplate": {
+    "id": "/providers/Microsoft.PowerApps/apps/",
+    "type": "Microsoft.PowerApps/apps",
+    "tags": {
+      "primaryDeviceWidth": "640",
+      "primaryDeviceHeight": "1136",
+      "sienaVersion": "20210828T035811Z-3.21083.28.0",
+      "deviceCapabilities": "",
+      "supportsPortrait": "true",
+      "supportsLandscape": "true",
+      "primaryFormFactor": "Phone",
+      "publisherVersion": "3.21083.28",
+      "minimumRequiredApiVersion": "2.2.0",
+      "hasComponent": "false",
+      "hasUnlockedComponent": "false",
+      "isUnifiedRootApp": "false"
+    },
+    "properties": {
+      "appVersion": "2021-08-28T03:58:11Z",
+      "lifeCycleId": "Published",
+      "createdByClientVersion": {
+        "major": 3,
+        "minor": 21083,
+        "build": 28,
+        "revision": 0,
+        "majorRevision": 0,
+        "minorRevision": 0
+      },
+      "minClientVersion": {
+        "major": 3,
+        "minor": 21083,
+        "build": 28,
+        "revision": 0,
+        "majorRevision": 0,
+        "minorRevision": 0
+      },
+      "backgroundColor": "rgba(0, 176, 240, 1)",
+      "backgroundImageUri": "/14353356465197885905/N70677f37-c210-43c2-87c4-fd133ff082ff-logoSmallFile",
+      "displayName": "Aplicativo",
+      "description": "",
+      "commitMessage": "",
+      "appUris": {
+        "documentUri": {
+          "value": "/14353356465197885905/N4d211866-d072-4bab-a3d7-d691e539d920-document.msapp"
+        },
+        "imageUris": []
+      },
+      "createdTime": "0001-01-01T00:00:00Z",
+      "lastModifiedTime": "0001-01-01T00:00:00Z",
+      "sharedGroupsCount": 0,
+      "sharedUsersCount": 0,
+      "icons": {
+        "smallIconUri": "/14353356465197885905/N77a9bf38-c615-4491-bbca-6a85105039b8-small.png",
+        "mediumIconUri": "/14353356465197885905/N36aa8ead-646e-4de3-878e-623f80c5b8db-medium.png",
+        "largeIconUri": "/14353356465197885905/Naa36bfb3-0e75-4aae-a695-31d60543c86a-large.png",
+        "wideIconUri": "/14353356465197885905/N8163a221-5517-44e6-a3d4-076d98acadaa-wide.png"
+      },
+      "connectionReferences": {
+        "25acdae9-12a1-44e7-8673-f95be9256e5e": {
+          "id": "e49d93bf-2ad1-46e2-9907-c0692e214746",
+          "displayName": "Excel",
+          "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1493/1.0.1493.2486/excel/icon.png",
+          "dataSources": ["Tabela1"],
+          "dependencies": ["f3f71f7b-3287-42dc-9521-58b71b1c8205"],
+          "dependents": [],
+          "parameterHints": {
+            "f3f71f7b-3287-42dc-9521-58b71b1c8205": { "value": "fileSource" }
+          },
+          "parameterHintsV2": {
+            "fileSource": { "value": "f3f71f7b-3287-42dc-9521-58b71b1c8205" }
+          },
+          "isOnPremiseConnection": false,
+          "dataSets": {
+            "b!5lU3Lk9yrUWUlT_90GV92A4-INLpPDVLtEz5h7jubIM26F9SBP9fS4UO9v48NFwM.01ZLCODS7W5UZFVRHSO5HLDLSPGLON7Z6J": {
+              "dataSources": { "Tabela1": { "tableName": "Tabela1" } }
+            }
+          },
+          "apiTier": "Standard",
+          "isCustomApiConnection": false,
+          "actions": [
+            "providers/PowerPlatform.Governance/Operations/Read",
+            "providers/PowerPlatform.Governance/Operations/Write",
+            "providers/PowerPlatform.Governance/Operations/Delete"
+          ]
+        },
+        "f3f71f7b-3287-42dc-9521-58b71b1c8205": {
+          "id": "4f27dfce-1201-45b8-b4ef-623b2fc97e01",
+          "displayName": "OneDrive for Business",
+          "iconUri": "https://connectoricons-prod.azureedge.net/depfeife/special-train/1.0.1489.2478/onedriveforbusiness/icon.png",
+          "dataSources": [],
+          "dependencies": [],
+          "dependents": ["25acdae9-12a1-44e7-8673-f95be9256e5e"],
+          "parameterHints": {},
+          "parameterHintsV2": {},
+          "isOnPremiseConnection": false,
+          "dataSets": {},
+          "apiTier": "Standard",
+          "isCustomApiConnection": false
+        }
+      },
+      "databaseReferences": {},
+      "almMode": "Environment",
+      "performanceOptimizationEnabled": true,
+      "canConsumeAppPass": true,
+      "executionRestrictions": {
+        "isTeamsOnly": false,
+        "dataLossPreventionEvaluationResult": {
+          "status": "Compliant",
+          "lastEvaluationDate": "2021-08-28T03:58:27.5233889Z",
+          "violations": [],
+          "violationsByPolicy": [],
+          "violationErrorMessage": "O aplicativo usa os seguintes conectores: shared_excel, shared_onedriveforbusiness."
+        }
+      }
+    },
+    "appType": "ClassicCanvasApp",
+    "appComponents": []
+  }
+}
